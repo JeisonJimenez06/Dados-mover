@@ -1,0 +1,15 @@
+{
+  "name": "Dados Shake App",
+  "short_name": "Dados",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#212529",
+  "theme_color": "#0d6efd",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/861/861042.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

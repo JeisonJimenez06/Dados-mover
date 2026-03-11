@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Shake!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        .dice { font-size: 10rem; transition: transform 0.2s; }
+        .shaking { animation: shake 0.5s infinite; }
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            40% { transform: translate(3px, 2px) rotate(-1deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+    </style>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0d6efd">
+</head>
+<body class="bg-dark text-white d-flex align-items-center justify-content-center vh-100">
+
+    <div class="text-center">
+        <h1>¡Agita para lanzar!</h1>
+        <div id="dice-container" class="my-4">
+            <i id="die1" class="bi bi-dice-1 dice"></i>
+        </div>
+        <p class="lead">O haz clic en el dado</p>
+        <audio id="dice-sound" src="https://www.soundjay.com/misc/sounds/dice-throw-1.mp3"></audio>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
